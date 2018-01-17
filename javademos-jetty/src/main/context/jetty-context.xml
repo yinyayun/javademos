@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure_9_0.dtd">
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
+  <Set name="contextPath"><SystemProperty name="hostContext" default="/"/></Set>
+  <Set name="defaultsDescriptor"><SystemProperty name="instance.home" default="."/>/webdefault.xml</Set>
+  <Set name="resourceBase"><SystemProperty name="instance.home" default="."/>/webapp</Set>
+  <!--Set name="resourceBase">D:\\solr_test\\instance1\\webapp</Set-->
+  <Set name="extractWAR">false</Set>
+</Configure>
